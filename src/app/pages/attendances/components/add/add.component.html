@@ -1,0 +1,48 @@
+<p>add works!</p>
+<form nz-form [formGroup]="form" (onsubmit)="onSave()">
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24">Employee</nz-form-label>
+    <nz-form-control [nzSpan]="4" formControlName="employee">
+      <nz-select nzShowSearch>
+        <nz-option *ngFor="let option of employees" [nzLabel]="option.name" [nzValue]="option.id"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Login Date and Time</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <nz-date-picker nzShowTime formControlName="loginDateTime"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Login Description</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="12" formControlName="loginDescription">
+      <textarea nz-input placeholder="Write the reason for loging-in here..."
+        [nzAutosize]="{ minRows: 3, maxRows: 5 }"></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Logout Date and Time</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="24">
+      <nz-date-picker nzShowTime formControlName="loginDateTime"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Logout Description</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="12" formControlName="loginDescription">
+      <textarea nz-input placeholder="Write the reason for loging-out here..."
+        [nzAutosize]="{ minRows: 3, maxRows: 5 }"></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>Remark</nz-form-label>
+    <nz-form-control [nzSm]="16" [nzXs]="12" formControlName="remrk">
+      <textarea nz-input placeholder="Write the remark here..." [nzAutosize]="{ minRows: 3, maxRows: 5 }"></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 8 }">
+      <button nz-button nzType="primary">Submit</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

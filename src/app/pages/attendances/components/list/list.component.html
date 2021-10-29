@@ -1,0 +1,73 @@
+<p>list works!</p>
+<div style="height: 30px; width: initial; background-color: white; align-content: flex-end;">
+  <a>
+    <button (click)="onAdd()" style="border: 0px; background-color: white;">Add New</button>
+  </a>
+</div>
+
+<nz-table #basicTable [nzData]="attendances">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Employee</th>
+      <th>Login Date and Time</th>
+      <th>Logout Date and Time</th>
+      <th>Login Description</th>
+      <th>Logout Description</th>
+      <th>Remark</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ data.employee }}</td>
+      <td>{{ data.loginDateTime | date: 'MMM dd, yyyy h:mm a' }}</td>
+      <td>{{ data.logoutDateTime | date: 'MMM dd, yyyy h:mm a' }}</td>
+      <td>{{ data.loginDescription }}</td>
+      <td>{{ data.loginDescription }}</td>
+      <td>{{ data.remark }}</td>
+      <td>
+        <a nz-dropdown [nzDropdownMenu]="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+          <!-- <i nz-icon nzType="down"></i> -->
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu nzSelectable>
+            <li nz-menu-item (click)="onDetail(data.id)">Detail</li>
+            <li nz-menu-item (click)="onEdit(data.id)">Edit</li>
+            <li nz-menu-item (click)="onDelete(data.id)">Delete</li>
+          </ul>
+        </nz-dropdown-menu>
+        <!-- <ul nz-menu [nzMode]="'vertical'" nzTitle="actions" nzIcon="mail">
+          <li nz-submenu nzTitle="Action" nzIcon="hamberger">
+            <ul>
+              <li nz-menu-item>
+                <button (click)="onDetail(data.id)" style="border: 0px; background-color: white;">Detail</button>
+              </li>
+              <li nz-menu-item>
+                <button (click)="onEdit(data.id)" style="border: 0px; background-color: white;">Edit</button>
+              </li>
+              <li nz-menu-item>
+                <button (click)="onDelete(data.id)" style="border: 0px; background-color: white;">Delete</button>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+        <!-- <a>
+          <button (click)="onDetail(data.id)" style="border: 0px; background-color: white;">Detail</button>
+        </a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>
+          <button (click)="onEdit(data.id)" style="border: 0px; background-color: white;">Edit</button>
+        </a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>
+          <button (click)="onDelete(data.id)" style="border: 0px; background-color: white;">Delete</button>
+        </a> -->
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

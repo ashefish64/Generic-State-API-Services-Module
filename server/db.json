@@ -1,0 +1,151 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "fname": "Amanuel",
+        "mname": "XYZ",
+        "lname": "XYZ"
+      },
+      {
+        "id": 2,
+        "fname": "Ashenafi",
+        "mname": "XYZ",
+        "lname": "XYZ"
+      },
+      {
+        "id": 3,
+        "fname": "Yaschalew",
+        "mname": "XYZ",
+        "lname": "XYZ"
+      },
+      {
+        "id": 4,
+        "fname": "Yosef",
+        "mname": "XYZ",
+        "lname": "XYZ"
+      }
+    ],
+    "attendances": [
+      {
+        "id": 1,
+        "employee": 1,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 2,
+        "employee": 2,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 3,
+        "employee": 3,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 4,
+        "employee": 4,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 5,
+        "employee": 1,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 6,
+        "employee": 2,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 7,
+        "employee": 3,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 8,
+        "employee": 4,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 9,
+        "employee": 1,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 10,
+        "employee": 2,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 11,
+        "employee": 3,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      },
+      {
+        "id": 12,
+        "employee": 4,
+        "loginDateTime": 1632981600000,
+        "loginDescription": "On Time",
+        "logoutDateTime": 1633014000000,
+        "logoutDescription": "On Time",
+        "remark": "Perfect",
+        "entry": false
+      }
+    ]
+  }
+  
